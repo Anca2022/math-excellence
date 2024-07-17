@@ -1,38 +1,157 @@
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App header {
+  scroll-snap-align: start;
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(to bottom, rgb(184, 156, 156), rgb(35, 1, 7));
+  position: relative;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App header .bg {
+  background-image: url("./assets/hero.jpg");
+  height: 100%;
+  width: 100%;
+  opacity: 0.75;
+  background-size: cover;
 }
-
-.App-header {
-  background-color: #282c34;
+.App header .text {
+  position: absolute;
+  bottom: 30%;
+  left: 10%;
+  width: 100%;
+}
+.App header .text h1, .App header .text p {
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+.App header .text h1 {
+  margin-bottom: 2rem;
+}
+.App .slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  scroll-snap-align: start;
+  padding: 20px;
   min-height: 100vh;
+}
+.App .slide span {
+  display: block;
+  font-size: 70%;
+}
+.App .slide .content .photo {
+  padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.App .slide .content .photo img {
+  width: 150px;
+  height: 150px;
+}
+.App .slide .content .photo .tonys-photo {
+  border-radius: 50%;
+  height: unset;
+}
+.App .slide .content .slide-text p {
+  line-height: 16px;
+}
+.App .slide .content .slide-text .about .about-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.App .slide .content .slide-text .about .about-item img {
+  width: 70px;
+  margin-right: 10px;
+}
+.App .slide .content .slide-text .testimonials {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+.App .slide .content .slide-text .testimonials button {
+  position: absolute;
+  font-size: 1.5rem;
+  background-color: rgba(170, 170, 143, 0.3);
+  border: none;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.App .slide .content .slide-text .testimonials .next-btn {
+  right: 0;
+}
+.App .slide .content .slide-text .testimonials .testimonials-container {
+  display: flex;
+  flex-direction: row;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+.App .slide .content .slide-text .testimonials .testimonials-container .testimonials-card {
+  background-color: rgb(244, 244, 244);
+  min-width: 250px;
+  height: 300px;
+  margin: 0 5px;
+  padding: 1rem 0.5rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.App .get-started {
+  scroll-snap-align: start;
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.App .get-started img {
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (min-width: 768px) {
+  .App .slide .content {
+    min-height: 400px;
+    height: 100%;
+    margin: auto 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
-  to {
-    transform: rotate(360deg);
+  .App .slide .content .slide-text {
+    width: 75%;
+    order: 1;
+  }
+  .App .slide .content .slide-text p {
+    line-height: 19px;
+  }
+  .App .slide .content .slide-text .about {
+    display: flex;
+    flex-direction: row;
+  }
+  .App .slide .content .slide-text .about .about-item {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    text-align: center;
+  }
+  .App .slide .content .slide-text .about .about-item p {
+    line-height: 21px;
+  }
+  .App .slide .content .photo {
+    order: 2;
   }
 }
+@media (min-width: 1024px) {
+  .App .slide {
+    padding: 40px;
+  }
+}/*# sourceMappingURL=App.css.map */
