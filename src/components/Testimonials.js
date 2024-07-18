@@ -1,18 +1,17 @@
 import { useRef } from "react";
 export default function Testimonials ({para}) {
     const containerRef = useRef(null); 
+    const width=230; // card width on mobile ;  
     function handlePrevClick(){
-        let width=containerRef.current.clientWidth; 
         containerRef.current.scrollLeft = containerRef.current.scrollLeft - width;
     }
     function handleNextClick(){
-        let width=containerRef.current.clientWidth; 
         containerRef.current.scrollLeft = containerRef.current.scrollLeft + width;
     }
 
     return (
         <section className='testimonials'>
-            <button className="prev-btn" onClick={handlePrevClick}>◀</button>
+            <button className="prev-btn" onClick={handlePrevClick}>‹</button>
             <div className='testimonials-container' ref={containerRef}>
                 {  
                     para.map((p, index) => (
@@ -24,7 +23,7 @@ export default function Testimonials ({para}) {
                     )
                 }
             </div>
-            <button className="next-btn" onClick={handleNextClick}>▶</button>
+            <button className="next-btn" onClick={handleNextClick}>›</button>
         </section>
     );
 }

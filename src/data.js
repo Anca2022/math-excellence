@@ -43,14 +43,13 @@ worldwide (Harvard, Oxford, ..) through their achievements.`
             [`先生のおかげで息子の数学の成績が飛躍的に向上しました。国際コンテストでの成功に感謝しています。`,
             `“Thanks to the teacher, my son's math grades have improved dramatically. I am grateful for his success in international contests."`],
             [`先生のおかげで息子の数学の成績が飛躍的に向上しました。国際コンテストでの成功に感謝しています。`,
-                `“Thanks to the teacher, my son's math grades have improved dramatically. I am grateful for his success in international contests."`],
+            `“Thanks to the teacher, my son's math grades have improved dramatically. I am grateful for his success in international contests."`],
             [`先生のおかげで息子の数学の成績が飛躍的に向上しました。国際コンテストでの成功に感謝しています。`,
-                `“Thanks to the teacher, my son's math grades have improved dramatically. I am grateful for his success in international contests."`],
+            `“Thanks to the teacher, my son's math grades have improved dramatically. I am grateful for his success in international contests."`],
             [`先生のおかげで息子の数学の成績が飛躍的に向上しました。国際コンテストでの成功に感謝しています。`,
-                `“Thanks to the teacher, my son's math grades have improved dramatically. I am grateful for his success in international contests."`]              
+             `“Thanks to the teacher, my son's math grades have improved dramatically. I am grateful for his success in international contests."`]              
         ], 
         photo: './assets/testimonials.jpg', 
-        // photoStars: './assets/testimonials-stars.jpg'
     }, 
     {
         title: `Teaching methods`, 
