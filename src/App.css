@@ -156,7 +156,6 @@
 .App .get-started .container-get-started .image-get-started {
   min-width: 280px;
   width: 100%;
-  max-width: 650px;
   margin: 0 auto;
 }
 .App .get-started .container-get-started .image-get-started img {
@@ -170,7 +169,7 @@
   }
   .App .slide {
     border-width: 3.5rem;
-    border-right: none;
+    border-right: 0;
   }
   .App .slide .container {
     min-height: calc(100vh - 7rem - 30px);
@@ -221,10 +220,12 @@
     margin-bottom: 0;
   }
   .App .get-started {
+    width: 100vw;
     border-width: 2.5rem;
     border-right: none;
   }
   .App .get-started .container-get-started {
+    width: 100%;
     min-height: calc(100vh - 5rem - 40px);
   }
   .App .get-started .container-get-started h2 {
@@ -234,13 +235,11 @@
     font-size: 18px;
   }
   .App .get-started .container-get-started .image-get-started {
-    width: 80%;
-    max-width: 600px;
-    margin: 0 auto;
+    width: auto;
   }
   .App .get-started .container-get-started .image-get-started img {
-    width: 100%;
-    height: 100%;
+    max-height: calc(100vh - 5rem - 130px);
+    aspect-ratio: 1.75;
   }
 }
 @media (min-width: 1024px) {

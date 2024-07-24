@@ -159,7 +159,6 @@
             .image-get-started{
                 min-width: 280px;
                 width: 100%;
-                max-width:650px;
                 margin: 0 auto;
                 img{
                     width:100%;
@@ -178,7 +177,7 @@
         }
         .slide{
             border-width:3.5rem;
-            border-right: none;
+             border-right: 0;
             .container{
                 min-height:calc(100vh - 7rem - 30px);
                 .content{
@@ -229,9 +228,11 @@
             }
         }
         .get-started{
+            width:100vw;
             border-width: 2.5rem;
             border-right:none;
             .container-get-started{
+                width:100%;
                 min-height:calc(100vh - 5rem - 40px);
                 h2{
                     margin-bottom: 0.5rem;
@@ -240,12 +241,10 @@
                     font-size: 18px;
                 }
                 .image-get-started{
-                    width: 80%;
-                    max-width:600px;
-                    margin: 0 auto;
+                    width: auto;
                     img{
-                        width:100%;
-                        height:100%;
+                        max-height: calc(100vh - 5rem - 130px);
+                        aspect-ratio: 1.75;
                     }
                 }
             }

@@ -42,7 +42,12 @@ export default function Slide({slide}) {
                             slide.title.toLowerCase().includes('testimonials') ?
                                 <Testimonials para={slide.paragraphs}/>
                                 :
-                                slide.paragraphs.map((p, index )=> <p key={index}>{p}</p>)
+                                slide.paragraphs.map((p, index ) => (
+                                    typeof(p)=='object'? 
+                                    <p key={index}><b>{p.bold}</b> {p.normal}</p>  
+                                    :  
+                                    <p key={index}>{p}</p>
+                                ))
                         }
                     </div>
                 </div>
